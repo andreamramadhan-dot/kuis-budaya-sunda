@@ -21,8 +21,8 @@ src/
 │   ├── ui/          # Komponen reusable (Button, Badge, Modal, TimerBar)
 │   ├── quiz/        # Komponen khusus kuis (QuestionCard, OptionButton, ScoreBoard)
 │   └── layout/      # Navbar, Header, Footer
-├── data/            # Bank soal & data kategori kuis (quizQuestions.ts)
-├── hooks/           # Custom hooks (useQuizTimer.ts, useSoundEffects.ts)
+├── data/            # Bank soal & data kategori kuis
+├── hooks/           # Custom hooks
 ├── types/           # Definisi TypeScript (quiz.ts)
 ├── App.tsx          # Main entry / state container
 └── main.tsx
@@ -30,22 +30,20 @@ src/
 
 ### Aturan Penamaan:
 * Komponen: `PascalCase.tsx` (contoh: `QuestionCard.tsx`, `TimerBar.tsx`)
-* Hooks: `camelCase.ts` diawali `use` (contoh: `useQuizTimer.ts`)
+* Hooks: `camelCase.ts` diawali `use` (contoh: `useTimer.ts`)
 * Tipe Data: Simpan di `src/types/`
 
 ---
 
 ## 3. Pembagian Tugas Tim (Task Division)
-
-| Developer | Peran Utama | File / Modul yang Ditangani |
-| :--- | :--- | :--- |
-| **Andrea (Dev A)** | **Game Logic & Flow** | - `src/hooks/useQuizTimer.ts`<br>- Flow navigasi soal (Next/Prev/Submit)<br>- Kalkulasi Skor & Nyawa/Streak<br>- State management di `src/App.tsx` |
-| **Rekan Tim (Dev B)** | **Visual Gamification & UI** | - `src/components/quiz/OptionButton.tsx`<br>- `src/components/quiz/QuestionCard.tsx`<br>- Efek Confetti & Sound FX (`useSoundEffects.ts`)<br>- Tampilan Hasil Akhir / Leaderboard |
+*Status: Menunggu desain dari tim UI/UX.*
+* Pembagian modul dan fitur akan disepakati bersama oleh tim developer setelah mockup / Figma tersedia.
+* Jangan mulai membuat fitur spesifik sebelum kesepakatan pembagian tugas ditentukan.
 
 ---
 
 ## 4. Git & Kolaborasi Branch
-* **Branch Utama:** `main` (jangan commit langsung ke `main`)
-* **Branch Andrea:** `feature/game-flow-and-timer`
-* **Branch Rekan:** `feature/quiz-ui-and-components`
-* **Sebelum push:** Jalankan `npm run build` untuk memastikan tidak ada error TypeScript atau build error.
+* **Branch Utama:** `main` (dilarang push langsung ke `main`).
+* **Feature Branch:** Setiap developer bekerja di branch fitur masing-masing (format: `feature/<nama-fitur>`).
+* **Integrasi:** Penggabungan fitur ke branch `main` wajib melalui Pull Request (PR) di GitHub.
+* **Sebelum push/PR:** Pastikan menjalankan `npm run build` terlebih dahulu untuk memverifikasi tidak ada error TypeScript.
