@@ -1,8 +1,19 @@
-# Antigravity AI Project Rules - Kuis Budaya Sunda
+# Antigravity AI Project Rules - Kuis Budaya Sunda (4-Developer Team)
 
-When generating or editing code for this project:
-1. Always adhere to the types declared in `src/types/quiz.ts`.
-2. Use Tailwind CSS with gamified styling (vibrant colors: emerald, amber, violet, slate-900 backgrounds, rounded-2xl cards, active 3D press effects).
-3. Keep logic decoupled: UI components in `src/components/`, state hooks in `src/hooks/`, and data in `src/data/`.
-4. Ensure all TypeScript types are strictly typed (no `any`).
-5. Ensure mobile responsiveness as this quiz is designed to be played on both mobile and desktop (Wayground/Kahoot-style).
+When generating or editing code for this project, you MUST strictly adhere to:
+
+1. ZERO OVERLAP ARCHITECTURE:
+   - NEVER modify or overwrite `src/App.tsx` when creating feature components.
+   - All feature components must be self-contained and isolated within their designated feature folders (`src/components/landing/`, `src/components/gameplay/`, `src/components/result/`, `src/components/ui/`, etc.).
+   - Only modify `src/App.tsx` when explicitly requested to perform the final app-level wiring / integration.
+
+2. STRICT TYPESCRIPT COMPLIANCE:
+   - Strictly adhere to data contracts defined in `src/types/quiz.ts`.
+   - Never use `any`. Always use explicit typing and type-only imports where appropriate (`import type { ... }`).
+
+3. GAMIFIED & VIBRANT UI:
+   - Use Tailwind CSS with modern gamified styling (vibrant color palettes: emerald, amber, violet, slate-900 background, rounded-2xl / rounded-3xl cards, active 3D press buttons).
+   - Ensure complete responsiveness across mobile and desktop devices.
+
+4. BUILD SAFETY:
+   - Code must always pass `npm run build` (`tsc -b && vite build`) with zero TypeScript errors and zero unused variable warnings.
