@@ -16,8 +16,8 @@ export interface CharacterMeta {
 
 // Host arena background assets
 export const HOST_ASSETS = {
-  arenaEngklek: '/assets/host/arena-engklek.jpg',
-  arenaClean: '/assets/host/arena-clean.jpg',
+  arenaEngklek: '/assets/host/IMG-20261113-WA0004.jpg',
+  arenaClean: '/assets/host/IMG-20261113-WA0004.jpg',
   arenaBlueprint: '/assets/host/arena-blueprint.jpg',
 } as const
 
