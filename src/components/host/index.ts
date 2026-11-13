@@ -1,5 +1,6 @@
 export { HostDashboard } from './HostDashboard'
 export { ArenaEngklek } from './ArenaEngklek'
+export { MoveableCharacter } from './MoveableCharacter'
 export { RoomPinDisplay } from './RoomPinDisplay'
 export { HostControls } from './HostControls'
 export { PlayerListPanel } from './PlayerListPanel'
