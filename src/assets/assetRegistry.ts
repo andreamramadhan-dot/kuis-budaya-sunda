@@ -73,10 +73,10 @@ export const CHARACTER_REGISTRY: Record<CharacterId, CharacterMeta> = {
     gender: 'female',
     description: 'Gadis Sunda berkebaya anggun dan teliti',
     sprites: {
-      idle: '/assets/karakter/K4/idle.jpeg',
-      jump: '/assets/karakter/K4/jump.jpeg',
-      fall: '/assets/karakter/K4/fall.jpeg',
-      throw: '/assets/karakter/K4/throw.jpeg',
+      idle: '/assets/karakter/K4/idle.png',
+      jump: '/assets/karakter/K4/jump.png',
+      fall: '/assets/karakter/K4/fall.png',
+      throw: '/assets/karakter/K4/throw.png',
     },
   },
   K5: {
@@ -85,10 +85,10 @@ export const CHARACTER_REGISTRY: Record<CharacterId, CharacterMeta> = {
     gender: 'female',
     description: 'Gadis periang bersanggul modern',
     sprites: {
-      idle: '/assets/karakter/K5/idle.jpeg',
-      jump: '/assets/karakter/K5/jump.jpeg',
-      fall: '/assets/karakter/K5/fall.jpeg',
-      throw: '/assets/karakter/K5/throw.jpeg',
+      idle: '/assets/karakter/K5/idle.png',
+      jump: '/assets/karakter/K5/jump.png',
+      fall: '/assets/karakter/K5/fall.png',
+      throw: '/assets/karakter/K5/throw.png',
     },
   },
   K6: {
@@ -97,10 +97,10 @@ export const CHARACTER_REGISTRY: Record<CharacterId, CharacterMeta> = {
     gender: 'male',
     description: 'Pemain tangguh penuh semangat',
     sprites: {
-      idle: '/assets/karakter/K6/idle.jpeg',
-      jump: '/assets/karakter/K6/jump.jpeg',
-      fall: '/assets/karakter/K6/fall.jpeg',
-      throw: '/assets/karakter/K6/throw.jpeg',
+      idle: '/assets/karakter/K6/idle.png',
+      jump: '/assets/karakter/K6/jump.png',
+      fall: '/assets/karakter/K6/fall.png',
+      throw: '/assets/karakter/K6/throw.png',
     },
   },
   K7: {
@@ -109,10 +109,10 @@ export const CHARACTER_REGISTRY: Record<CharacterId, CharacterMeta> = {
     gender: 'female',
     description: 'Anak perempuan cerdas pembaca ulung',
     sprites: {
-      idle: '/assets/karakter/K7/idle.jpeg',
-      jump: '/assets/karakter/K7/jump.jpeg',
-      fall: '/assets/karakter/K7/fall.jpeg',
-      throw: '/assets/karakter/K7/throw.jpeg',
+      idle: '/assets/karakter/K7/idle.png',
+      jump: '/assets/karakter/K7/jump.png',
+      fall: '/assets/karakter/K7/fall.png',
+      throw: '/assets/karakter/K7/throw.png',
     },
   },
   K8: {
@@ -121,10 +121,10 @@ export const CHARACTER_REGISTRY: Record<CharacterId, CharacterMeta> = {
     gender: 'male',
     description: 'Pemberani penakluk tantangan gunung',
     sprites: {
-      idle: '/assets/karakter/K8/idle.jpeg',
-      jump: '/assets/karakter/K8/jump.jpeg',
-      fall: '/assets/karakter/K8/fall.jpeg',
-      throw: '/assets/karakter/K8/throw.jpeg',
+      idle: '/assets/karakter/K8/idle.png',
+      jump: '/assets/karakter/K8/jump.png',
+      fall: '/assets/karakter/K8/fall.png',
+      throw: '/assets/karakter/K8/throw.png',
     },
   },
 }

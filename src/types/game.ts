@@ -11,6 +11,7 @@ export type PlayerAction = 'idle' | 'jump' | 'fall' | 'throw'
 export interface Player {
   id: string
   name: string
+  role?: string            // e.g. 'Ketua', 'Frontend', 'UI/UX', etc.
   characterId: CharacterId
   score: number
   position: number         // 0 = start, 1-10 = petak engklek, 10 = gunung (puncak)
@@ -19,6 +20,7 @@ export interface Player {
   currentAction: PlayerAction
   ownedPetaks: number[]    // Petak yang dikuasai (Engklek mode)
   sawahCount: number       // Jumlah sawah dimiliki
+  dialogText?: string      // Bubble dialog text
 }
 
 // =====================

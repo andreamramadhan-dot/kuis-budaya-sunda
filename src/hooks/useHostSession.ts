@@ -3,13 +3,14 @@ import type { Player, Petak, SessionStatus, GameMode } from '../types/game'
 import type { CharacterId } from '../assets/assetRegistry'
 import { socketClient } from '../services/socketClient'
 
-// Demo players for development / preview
+// Demo players matching the official project design (Foto 2)
 const DEMO_PLAYERS: Player[] = [
-  { id: 'p1', name: 'Rafi', characterId: 'K1', score: 320, position: 5, isReady: true,  isConnected: true,  currentAction: 'idle', ownedPetaks: [3], sawahCount: 1 },
-  { id: 'p2', name: 'Sinta', characterId: 'K4', score: 280, position: 3, isReady: true,  isConnected: true,  currentAction: 'idle', ownedPetaks: [],  sawahCount: 0 },
-  { id: 'p3', name: 'Deden', characterId: 'K3', score: 150, position: 1, isReady: true,  isConnected: true,  currentAction: 'idle', ownedPetaks: [],  sawahCount: 0 },
-  { id: 'p4', name: 'Mia',   characterId: 'K5', score: 410, position: 7, isReady: true,  isConnected: true,  currentAction: 'jump', ownedPetaks: [6], sawahCount: 1 },
-  { id: 'p5', name: 'Budi',  characterId: 'K2', score: 90,  position: 2, isReady: false, isConnected: false, currentAction: 'idle', ownedPetaks: [],  sawahCount: 0 },
+  { id: 'p1', name: 'Haikal',  role: 'Pemain Utama', characterId: 'K1', score: 320, position: 0, isReady: true, isConnected: true, currentAction: 'idle', ownedPetaks: [], sawahCount: 0, dialogText: '✨ Siap gass kuis, Pa Dik Dik!' },
+  { id: 'p2', name: 'Khalid',  role: 'Ketua',        characterId: 'K3', score: 280, position: 0, isReady: true, isConnected: true, currentAction: 'idle', ownedPetaks: [], sawahCount: 0, dialogText: '🔥 Hayu urang rampungkeun kuisna!' },
+  { id: 'p3', name: 'Bintang', role: 'Frontend',     characterId: 'K2', score: 250, position: 0, isReady: true, isConnected: true, currentAction: 'idle', ownedPetaks: [], sawahCount: 0, dialogText: '💻 UI tos rapih pisan!' },
+  { id: 'p4', name: 'Intan',   role: 'UI/UX',        characterId: 'K4', score: 310, position: 0, isReady: true, isConnected: true, currentAction: 'idle', ownedPetaks: [], sawahCount: 0, dialogText: '🎨 Desain Sunda Empire mantap!' },
+  { id: 'p5', name: 'Luna',    role: 'Design',       characterId: 'K5', score: 290, position: 0, isReady: true, isConnected: true, currentAction: 'idle', ownedPetaks: [], sawahCount: 0, dialogText: '🌾 Arena desa Sunda siap!' },
+  { id: 'p6', name: 'Rizky',   role: 'Backend',      characterId: 'K6', score: 270, position: 0, isReady: true, isConnected: true, currentAction: 'idle', ownedPetaks: [], sawahCount: 0, dialogText: '⚡ Socket server lancar jaya!' },
 ]
 
 function buildPetaks(): Petak[] {
